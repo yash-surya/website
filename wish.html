@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello Aboli</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #000000;
+      padding: 20px;
+      margin: 0;
+    }
+
+    h3 {
+      color: #fffcfc;
+      margin-bottom: 20px;
+      font-size: 25px;
+      margin-top: 1px;
+      position: relative;
+      letter-spacing: 15px;
+      color: #0e3742;
+      text-transform: uppercase;
+      width: 100%;
+      text-align: center;
+      -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+      line-height: 0.70em;
+      outline: none;
+      animation: glowAndSlide 2s linear forwards;
+  
+    }
+    @keyframes glowAndSlide {
+    0% {
+      color: #0e3742;
+      text-shadow: none;
+      transform: translateX(-100%); /* Initial position off-screen to the left */
+    }
+    100% {
+      color: #fff;
+      text-shadow: 0 0 20px #03bcf4,
+                    0 0 40px #03bcf4,
+                    0 0 60px #03bcf4,
+                    0 0 80px #03bcf4,
+                    0 0 160px #03bcf4;
+      transform: translateX(0); /* Final position, fully visible */
+    }
+  }
+  
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    video {
+      width: 100%;
+      max-width: 640px;
+      height: auto;
+      margin: 20px auto; /* Center the video */
+    }
+  </style>
+</head>
+<body>
+  <h3>HELLO ABOLI❤️</h3>
+  <button onclick="playVideo()">Surprise</button>
+
+  <video id="myVideo" controls style="display: none">
+    <!-- Replace 'your_video_url.mp4' with the actual URL or path to your video file -->
+    <source src="video_A.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <script>
+    function playVideo() {
+      var video = document.getElementById('myVideo');
+      video.style.display = 'block';
+      video.play();
+    }
+  </script>
+</body>
+</html>
